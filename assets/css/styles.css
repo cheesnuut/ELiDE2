@@ -497,16 +497,7 @@ input, select { font: inherit; color: inherit; }
 .card__cta {
   align-self: flex-start;
   margin-top: var(--space-xs);
-  font-size: var(--step--1);
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--accent);
-  border-bottom: 1px solid var(--accent);
-  padding-bottom: 0.15rem;
-  transition: color 0.3s, border-color 0.3s;
 }
-.card__cta:hover, .card__cta:focus-visible { color: var(--accent-deep); border-color: var(--accent-deep); }
 .card--wait { background: var(--accent-tint); }
 .opening {
   margin-top: var(--space-l);
