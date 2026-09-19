@@ -664,7 +664,18 @@ input, select { font: inherit; color: inherit; }
   .foot__grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 560px) {
-  .cards { grid-template-columns: 1fr; }
+  .cards {
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: 80%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: var(--space-s);
+    margin-inline: calc(-1 * var(--gut));
+    padding-inline: var(--gut);
+    scrollbar-width: thin;
+  }
+  .cards .card { scroll-snap-align: start; }
   .hero__cta .btn { flex: 1 1 auto; }
   .compare__stage { aspect-ratio: 4 / 5; }
   .foot__grid { grid-template-columns: 1fr; gap: var(--space-m); }
@@ -744,6 +755,9 @@ input, select { font: inherit; color: inherit; }
 .visit__body strong { color: var(--ink); }
 
 /* ---------- Booking alt contact ---------- */
+.book__opt { font-weight: 400; color: var(--ink-soft); font-size: var(--step--1); }
+.book__fine a { color: var(--gold); border-bottom: 1px solid var(--gold); padding-bottom: 0.1rem; }
+.book__fine a:hover, .book__fine a:focus-visible { color: var(--paper); border-color: var(--paper); }
 .book__alt { font-size: var(--step--1); color: rgba(250, 246, 240, 0.7); }
 .book__alt a { color: var(--gold); border-bottom: 1px solid var(--gold); padding-bottom: 0.1rem; }
 .book__alt a:hover, .book__alt a:focus-visible { color: var(--paper); border-color: var(--paper); }

@@ -397,12 +397,16 @@
       <p class="eyebrow">Book</p>
       <h2 class="h2">Book a session</h2>
       <p class="lede booking__lede">
-        One client at a time. Always. Tell us which service and we will send times, the unit
+        One client at a time. Always. Tell us which service and when suits you, and we will send times, the unit
         number, and the patch-test slot forty-eight hours ahead.
       </p>
     </header>
 
     <form class="book__form" id="bookForm" action="mailto:message.chesa@gmail.com" method="post" enctype="text/plain" novalidate>
+      <div class="book__row">
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" required placeholder="What should we call you?" autocomplete="name">
+      </div>
       <div class="book__row">
         <label for="service">Service</label>
         <select id="service" name="service">
@@ -418,9 +422,13 @@
         <label for="email">Email address</label>
         <input id="email" name="email" type="email" required placeholder="you@example.com" autocomplete="email" inputmode="email">
       </div>
+      <div class="book__row">
+        <label for="when">When suits you? <span class="book__opt">(optional)</span></label>
+        <input id="when" name="when" type="text" placeholder="e.g. weekday evenings, Sat morning">
+      </div>
       <button class="btn btn--fill btn--lg" type="submit">Request times</button>
       <p class="book__note" id="bookNote" role="status" aria-live="polite"></p>
-      <p class="book__fine">This opens your mail app with the request pre-filled — nothing is stored on this page. Wire it to your booking system of choice when you are ready.</p>
+      <p class="book__fine">This opens your mail app with the request pre-filled — nothing is stored on this page. No mail app? Email <a href="mailto:message.chesa@gmail.com">message.chesa@gmail.com</a> directly instead.</p>
       <!-- DRAFT: replace 6500000000 with Chesa's WhatsApp number and elide.studio with her Instagram handle -->
       <p class="book__alt">Prefer to chat? <a href="https://wa.me/6500000000?text=Hi%20ELiDE%2C%20I%27d%20like%20to%20book%20a%20lash%20session." target="_blank" rel="noopener">WhatsApp us</a> · <a href="https://instagram.com/elide.studio" target="_blank" rel="noopener">Instagram</a></p>
     </form>
