@@ -138,8 +138,15 @@
   if (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
+      var name = $('#name');
       var email = $('#email');
       var service = $('#service');
+      var when = $('#when');
+      if (!name.value.trim()) {
+        note.textContent = 'Tell us your name so we know who is writing.';
+        name.focus();
+        return;
+      }
       if (!email.value || !email.checkValidity()) {
         note.textContent = 'Enter a valid email address so times can be sent back to you.';
         email.focus();
@@ -147,7 +154,9 @@
       }
       var subject = 'Booking request — ' + service.value;
       var body = [
+        'Name: ' + name.value.trim(),
         'Service: ' + service.value,
+        'When suits me: ' + (when.value.trim() || 'anytime'),
         'Reply to: ' + email.value,
         '',
         'Please send available times, the unit number, and the patch-test slot.'
@@ -155,7 +164,7 @@
       window.location.href = 'mailto:' + BOOKING_EMAIL +
         '?subject=' + encodeURIComponent(subject) +
         '&body=' + encodeURIComponent(body);
-      note.textContent = 'Your mail app should now open with the request pre-filled — press send there to finish.';
+      note.textContent = 'Your mail app should now open with the request pre-filled — press send there to finish. If nothing opened, email ' + BOOKING_EMAIL + ' directly instead.';
     });
   }
 
