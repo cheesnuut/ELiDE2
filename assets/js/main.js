@@ -132,7 +132,7 @@
      mail client, and the status line says exactly what happened. Swap the
      BOOKING_EMAIL constant for the studio's real address, or point the form at
      a booking backend when one exists. */
-  var BOOKING_EMAIL = 'bookings@example.com';
+  var BOOKING_EMAIL = 'message.chesa@gmail.com';
   var form = $('#bookForm');
   var note = $('#bookNote');
   if (form) {
