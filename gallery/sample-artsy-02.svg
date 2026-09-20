@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000">
+<rect width="800" height="1000" fill="#fdf3ea"/>
+<circle cx="400" cy="500" r="300" fill="#fbe2ce" opacity="0.8"/>
+<path d="M180 620 Q400 560 620 620" stroke="#a32d20" stroke-width="10" fill="none" stroke-linecap="round"/>
+<line x1="400" y1="560" x2="550" y2="443" stroke="#231f1d" stroke-width="3.4" stroke-linecap="round" opacity="0.85"/><line x1="400" y1="560" x2="567" y2="469" stroke="#231f1d" stroke-width="4.3" stroke-linecap="round" opacity="0.85"/><line x1="400" y1="560" x2="580" y2="498" stroke="#231f1d" stroke-width="5.2" stroke-linecap="round" opacity="0.85"/><line x1="400" y1="560" x2="587" y2="529" stroke="#231f1d" stroke-width="6.1" stroke-linecap="round" opacity="0.85"/><line x1="400" y1="560" x2="590" y2="560" stroke="#231f1d" stroke-width="7.0" stroke-linecap="round" opacity="0.85"/><line x1="400" y1="560" x2="587" y2="591" stroke="#231f1d" stroke-width="6.1" stroke-linecap="round" opacity="0.85"/><line x1="400" y1="560" x2="580" y2="622" stroke="#231f1d" stroke-width="5.2" stroke-linecap="round" opacity="0.85"/><line x1="400" y1="560" x2="567" y2="651" stroke="#231f1d" stroke-width="4.3" stroke-linecap="round" opacity="0.85"/><line x1="400" y1="560" x2="550" y2="677" stroke="#231f1d" stroke-width="3.4" stroke-linecap="round" opacity="0.85"/>
+<text x="400" y="120" text-anchor="middle" font-family="monospace" font-size="30" letter-spacing="8" fill="#5f5854">SAMPLE</text>
+<text x="400" y="920" text-anchor="middle" font-family="monospace" font-size="26" letter-spacing="6" fill="#5f5854">ARTSY 02</text>
+</svg>

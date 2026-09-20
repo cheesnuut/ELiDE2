@@ -5,6 +5,22 @@
 .eg-eyebrow{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.78rem;text-transform:uppercase;letter-spacing:.16em;color:var(--ink-soft);margin:0 0 1rem}
 .eg-title{font-size:clamp(2.4rem,7vw,6rem);line-height:.98;margin:0;color:var(--ink)}
 .eg-title em{font-style:italic;color:var(--lacquer)}
+.eg-filters{display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:2.75rem}
+.eg-chipbtn{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;padding:.6rem 1.05rem;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--ink-soft);cursor:pointer;transition:background .25s,color .25s,border-color .25s}
+.eg-chipbtn:hover{border-color:var(--ink-soft)}
+.eg-chipbtn[aria-pressed="true"]{background:var(--lacquer);border-color:var(--lacquer);color:var(--paper)}
+.eg-browsebtn{display:inline-flex;align-items:center;gap:.55rem;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:var(--ink-soft);background:transparent;border:1px solid var(--line);border-radius:999px;padding:.7rem 1.1rem;cursor:pointer;transition:background .25s,color .25s,border-color .25s}
+.eg-browsebtn:hover{border-color:var(--ink-soft);color:var(--ink)}
+.eg-browsebtn.is-open{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.eg-gridicon{display:inline-grid;grid-template-columns:repeat(2,.42rem);grid-auto-rows:.42rem;gap:.14rem}
+.eg-gridicon i{background:currentColor;border-radius:1px}
+.eg-panel{margin-top:1.5rem}
+.eg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+@media(max-width:640px){.eg-grid{grid-template-columns:repeat(2,1fr)}}
+.eg-thumb{position:relative;border:0;background:none;padding:0;cursor:pointer;border-radius:.9rem;overflow:hidden}
+.eg-thumb img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;border-radius:.9rem;transition:transform .3s}
+.eg-thumb:hover img{transform:scale(1.03)}
+.eg-thumb .eg-chip{left:.7rem;bottom:.7rem}
 .eg-carousel{position:relative;max-width:44rem;margin:0 auto}
 .eg-viewport{overflow:hidden;border-radius:1.25rem}
 .eg-track{display:flex;transition:transform .5s cubic-bezier(.22,.8,.3,1)}
